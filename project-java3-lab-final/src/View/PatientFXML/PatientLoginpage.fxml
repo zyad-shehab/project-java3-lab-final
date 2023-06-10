@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="802.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.PatientFXML.PatientLoginpageController">
+   <children>
+      <ImageView fitHeight="633.0" fitWidth="900.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/patient.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="199.0" layoutY="119.0" prefHeight="362.0" prefWidth="502.0" style="-fx-background-color: #0E756985;">
+         <children>
+            <TextField fx:id="userNameTF" layoutX="190.0" layoutY="120.0" promptText="enter username" />
+            <TextField fx:id="passwordTF" layoutX="190.0" layoutY="178.0" promptText="enter password" />
+            <Button fx:id="loginBTN" layoutX="196.0" layoutY="254.0" mnemonicParsing="false" onAction="#loginBTN" prefHeight="31.0" prefWidth="111.0" style="-fx-background-color: #063630; -fx-border-radius: 20;" text="Login" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Label layoutX="71.0" layoutY="122.0" prefHeight="27.0" prefWidth="97.0" text="UserName" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="71.0" layoutY="180.0" prefHeight="27.0" prefWidth="84.0" text="Password" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="IncorrectLabel" layoutX="138.0" layoutY="309.0" prefHeight="21.0" prefWidth="254.0" textFill="#ff8f8f">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="112.0" layoutY="28.0" prefHeight="46.0" prefWidth="280.0" text="Patient Login page" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="31.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="RegisterBTN" layoutX="252.0" layoutY="520.0" mnemonicParsing="false" onAction="#RegisterBTN" prefHeight="31.0" prefWidth="124.0" style="-fx-background-color: #0E7569;" text="Register" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="adminBTN" layoutX="516.0" layoutY="520.0" mnemonicParsing="false" onAction="#adminBTN" prefHeight="31.0" prefWidth="124.0" style="-fx-background-color: #0E7569;" text="Admin" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

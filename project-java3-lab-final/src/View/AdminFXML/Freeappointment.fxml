@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.AdminFXML.FreeappointmentController">
+   <children>
+      <AnchorPane layoutX="182.0" layoutY="-1.0" prefHeight="85.0" prefWidth="1118.0" style="-fx-background-color: #063630;">
+         <children>
+            <Label layoutX="460.0" layoutY="25.0" text="Free appointment" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="650.0" prefWidth="181.0" style="-fx-background-color: #063630;">
+         <children>
+            <Button fx:id="BookedappointmentBTN" layoutY="248.0" mnemonicParsing="false" onAction="#BookedappointmentBTN" prefHeight="52.0" prefWidth="182.0" style="-fx-background-color: #063630;" text="Booked appointment" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="PatientsBTN" layoutY="148.0" mnemonicParsing="false" onAction="#PatientsBTN" prefHeight="52.0" prefWidth="182.0" style="-fx-background-color: #063630; -fx-border-radius: 0;" text="Patients" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="FreeappointmentBTN" layoutY="346.0" mnemonicParsing="false" onAction="#FreeappointmentBTN" prefHeight="52.0" prefWidth="182.0" style="-fx-background-color: #0E7569;" text="Free appointment" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="LogoutBTN" layoutX="5.0" layoutY="584.0" mnemonicParsing="false" onAction="#LogoutBTN" prefHeight="52.0" prefWidth="172.0" style="-fx-background-color: #1DF5DC;" text="Log out" textFill="#063630">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="53.0" layoutY="25.0" text="Admin" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="182.0" layoutY="83.0" prefHeight="59.0" prefWidth="1118.0" style="-fx-background-color: #16B5A2;" />
+      <Button fx:id="AddnewappointmentBTN" layoutX="532.0" layoutY="577.0" mnemonicParsing="false" onAction="#AddnewappointmentBTN" prefHeight="59.0" prefWidth="199.0" style="-fx-background-color: #1DF5DC;" text="Add new appointment" textFill="#063630">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="DeleteappointmentBTN" layoutX="952.0" layoutY="577.0" mnemonicParsing="false" onAction="#DeleteappointmentBTN" prefHeight="59.0" prefWidth="199.0" style="-fx-background-color: #B52722;" text="Delete appointment" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="UpdateappointmentBTN" layoutX="741.0" layoutY="577.0" mnemonicParsing="false" onAction="#UpdateappointmentBTN" prefHeight="59.0" prefWidth="199.0" style="-fx-background-color: #1DF5DC;" text="Update appointment" textFill="#063630">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="ShowappointmentBTN" layoutX="320.0" layoutY="577.0" mnemonicParsing="false" onAction="#ShowappointmentBTN" prefHeight="59.0" prefWidth="199.0" style="-fx-background-color: #1DF5DC;" text="Show appointment" textFill="#063630">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <TableView fx:id="TableView" layoutX="393.0" layoutY="162.0" prefHeight="394.0" prefWidth="684.0">
+        <columns>
+          <TableColumn fx:id="DateCV" prefWidth="223.0" text="Date" />
+          <TableColumn fx:id="DayCV" prefWidth="233.0" text="Day" />
+            <TableColumn fx:id="TimeCV" prefWidth="227.0" text="Time" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

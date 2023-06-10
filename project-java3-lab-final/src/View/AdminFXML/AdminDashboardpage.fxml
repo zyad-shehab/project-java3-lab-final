@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.AdminFXML.AdminDashboardpageController">
+   <children>
+      <AnchorPane layoutX="182.0" layoutY="-1.0" prefHeight="85.0" prefWidth="1118.0" style="-fx-background-color: #063630;">
+         <children>
+            <Label layoutX="513.0" layoutY="25.0" text="Patients" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane prefHeight="650.0" prefWidth="181.0" style="-fx-background-color: #063630;">
+         <children>
+            <Button fx:id="BookedappointmentBTN" layoutY="248.0" mnemonicParsing="false" onAction="#actionBookedappointment" prefHeight="52.0" prefWidth="182.0" style="-fx-background-color: #063630;" text="Booked appointment" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutY="148.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="182.0" style="-fx-background-color: #0E7569; -fx-border-radius: 0;" text="Patients" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="FreeappointmentBTN" layoutY="346.0" mnemonicParsing="false" onAction="#actionFreeappointment" prefHeight="52.0" prefWidth="182.0" style="-fx-background-color: #063630;" text="Free appointment" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="LogoutBTN" layoutX="5.0" layoutY="584.0" mnemonicParsing="false" onAction="#actionLogout" prefHeight="52.0" prefWidth="172.0" style="-fx-background-color: #1DF5DC;" text="Log out" textFill="#063630">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="53.0" layoutY="36.0" text="Admin" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="182.0" layoutY="83.0" prefHeight="59.0" prefWidth="1118.0" style="-fx-background-color: #16B5A2;">
+         <children>
+            <TextField fx:id="searchTF" layoutX="63.0" layoutY="14.0" prefHeight="31.0" prefWidth="432.0" promptText="Search by patient first name" />
+            <Button fx:id="searchBTN" layoutX="495.0" layoutY="14.0" mnemonicParsing="false" onAction="#actionsearchBTN" style="-fx-background-color: #063630;" text="Search" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button fx:id="DeleteBTN" layoutX="974.0" layoutY="577.0" mnemonicParsing="false" onAction="#actionDeleteBTN" prefHeight="59.0" prefWidth="182.0" style="-fx-background-color: #B52722;" text="Delete patient" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="UpdateBTN" layoutX="759.0" layoutY="577.0" mnemonicParsing="false" onAction="#actionUpdateBTN" prefHeight="59.0" prefWidth="182.0" style="-fx-background-color: #1DF5DC;" text="Update patient" textFill="#063630">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="AddNewBTN" layoutX="541.0" layoutY="577.0" mnemonicParsing="false" onAction="#actionAddNewBTN" prefHeight="59.0" prefWidth="182.0" style="-fx-background-color: #1DF5DC;" text="Add new patient" textFill="#063630">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="ShowAllPatientsBTN" layoutX="326.0" layoutY="577.0" mnemonicParsing="false" onAction="#ShowAllPatients" prefHeight="59.0" prefWidth="182.0" style="-fx-background-color: #1DF5DC;" text="Show All Patients" textFill="#063630">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tableView" layoutX="323.0" layoutY="164.0" prefHeight="399.0" prefWidth="831.0">
+        <columns>
+          <TableColumn fx:id="firstNameCV" prefWidth="118.0" text="first name" />
+          <TableColumn fx:id="lastNameCV" prefWidth="147.0" text="last name" />
+            <TableColumn fx:id="ageCV" prefWidth="73.0" text="age" />
+            <TableColumn fx:id="emailCV" prefWidth="229.0" text="email" />
+            <TableColumn fx:id="phoneCV" prefWidth="161.0" text="phone" />
+            <TableColumn fx:id="genderCV" prefWidth="102.0" text="gender" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

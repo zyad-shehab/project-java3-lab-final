@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.AdminFXML.PatientsaddController">
+   <children>
+      <AnchorPane layoutX="182.0" layoutY="-1.0" prefHeight="85.0" prefWidth="1118.0" style="-fx-background-color: #063630;">
+         <children>
+            <Label layoutX="519.0" layoutY="25.0" text="patient" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="650.0" prefWidth="181.0" style="-fx-background-color: #063630;">
+         <children>
+            <Button fx:id="BookedappointmentBTN" layoutY="248.0" mnemonicParsing="false" onAction="#Bookedappointment" prefHeight="52.0" prefWidth="182.0" style="-fx-background-color: #063630;" text="Booked appointment" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button layoutY="148.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="182.0" style="-fx-background-color: #0E7569; -fx-border-radius: 0;" text="Patients" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="FreeappointmentBTN" layoutY="346.0" mnemonicParsing="false" onAction="#Freeappointment" prefHeight="52.0" prefWidth="182.0" style="-fx-background-color: #063630;" text="Free appointment" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="LogoutBTN" layoutX="5.0" layoutY="584.0" mnemonicParsing="false" onAction="#Logout" prefHeight="52.0" prefWidth="172.0" style="-fx-background-color: #1DF5DC;" text="Log out" textFill="#063630">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="52.0" layoutY="27.0" text="Admin" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="182.0" layoutY="83.0" prefHeight="59.0" prefWidth="1118.0" style="-fx-background-color: #16B5A2;">
+         <children>
+            <Label layoutX="489.0" layoutY="16.0" text="Add new patient" textFill="#06362f">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <Button fx:id="saveBTN" layoutX="532.0" layoutY="522.0" mnemonicParsing="false" onAction="#saveBTN" prefHeight="27.0" prefWidth="139.0" style="-fx-background-color: #1DF5DC;" text="Save" textFill="#063630">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <RadioButton fx:id="FmaleRB" layoutX="886.0" layoutY="413.0" mnemonicParsing="false" onAction="#actionFmaleRB" prefHeight="25.0" prefWidth="95.0" text="Female" textFill="#383560">
+         <toggleGroup>
+            <ToggleGroup fx:id="genderGroup" />
+         </toggleGroup>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="maleRB" layoutX="807.0" layoutY="413.0" mnemonicParsing="false" onAction="#actionmaleRB" selected="true" text="Male" textFill="#383560" toggleGroup="$genderGroup">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="708.0" layoutY="412.0" prefHeight="27.0" prefWidth="97.0" text="Gender">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="408.0" layoutY="406.0" prefHeight="27.0" prefWidth="97.0" text="Age">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ageFT" layoutX="505.0" layoutY="404.0" prefHeight="31.0" prefWidth="166.0" promptText="enter Age" />
+      <TextField fx:id="PhoneTF" layoutX="803.0" layoutY="337.0" prefHeight="31.0" prefWidth="166.0" promptText="enter Phone" />
+      <Label layoutX="710.0" layoutY="339.0" prefHeight="27.0" prefWidth="97.0" text="Phone">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="409.0" layoutY="339.0" prefHeight="27.0" prefWidth="97.0" text="Password">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="passwordTF" layoutX="505.0" layoutY="337.0" prefHeight="31.0" prefWidth="166.0" promptText="enter Password" />
+      <TextField fx:id="emailTF" layoutX="504.0" layoutY="273.0" prefHeight="31.0" prefWidth="166.0" promptText="enter Email" />
+      <Label layoutX="407.0" layoutY="275.0" prefHeight="27.0" prefWidth="97.0" text="Email">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="708.0" layoutY="275.0" prefHeight="27.0" prefWidth="97.0" text="User Name">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="userNameTF" layoutX="805.0" layoutY="273.0" prefHeight="31.0" prefWidth="166.0" promptText="enter user name" />
+      <TextField fx:id="lastNameTF" layoutX="805.0" layoutY="212.0" prefHeight="31.0" prefWidth="166.0" promptText="enter Last name" />
+      <Label layoutX="708.0" layoutY="214.0" prefHeight="27.0" prefWidth="97.0" text="Last name">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="407.0" layoutY="214.0" prefHeight="27.0" prefWidth="97.0" text="First name">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="FirstnameTF" layoutX="504.0" layoutY="212.0" prefHeight="31.0" prefWidth="166.0" promptText="enter First name" />
+      <Button fx:id="cancelBTN" layoutX="708.0" layoutY="522.0" mnemonicParsing="false" onAction="#cancelBTN" prefHeight="27.0" prefWidth="139.0" style="-fx-background-color: #B52722;" text="Cancel" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

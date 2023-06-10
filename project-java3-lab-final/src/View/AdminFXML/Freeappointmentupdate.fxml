@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="494.0" prefWidth="516.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.AdminFXML.FreeappointmentupdateController">
+   <children>
+      <Button fx:id="CancelBTN" layoutX="274.0" layoutY="380.0" mnemonicParsing="false" onAction="#actionCancelBTN" prefHeight="27.0" prefWidth="139.0" style="-fx-background-color: #B52722;" text="Cancel" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <TextField fx:id="AppointmentDateFT" layoutX="274.0" layoutY="70.0" prefHeight="31.0" prefWidth="166.0" promptText="enter  Date" />
+      <Label layoutX="71.0" layoutY="72.0" prefHeight="27.0" prefWidth="172.0" text="Appointment Date">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="AppointmentDayTF" layoutX="274.0" layoutY="147.0" prefHeight="31.0" prefWidth="166.0" promptText="enter Day" />
+      <TextField fx:id="AppointmentTimeTF" layoutX="274.0" layoutY="223.0" prefHeight="31.0" prefWidth="166.0" promptText="enter Time" />
+      <Button fx:id="UpdateBTN" layoutX="98.0" layoutY="380.0" mnemonicParsing="false" onAction="#actionUpdateBTN" prefHeight="27.0" prefWidth="139.0" style="-fx-background-color: #1DF5DC;" text="Update " textFill="#063630">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="70.0" layoutY="149.0" prefHeight="27.0" prefWidth="172.0" text="Appointment Day">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" layoutY="225.0" prefHeight="27.0" prefWidth="172.0" text="Appointment Time">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

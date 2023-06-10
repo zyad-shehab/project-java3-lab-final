@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.PatientFXML.BookedfinishedappointmentsController">
+   <children>
+      <AnchorPane layoutX="182.0" prefHeight="84.0" prefWidth="1118.0" style="-fx-background-color: #16B5A2;">
+         <children>
+            <Label layoutX="390.0" layoutY="25.0" text="Booked finished appointments" textFill="#063630">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="650.0" prefWidth="181.0" style="-fx-background-color: #16B5A2;">
+         <children>
+            <Button fx:id="BookedwaitingBTN" layoutY="248.0" mnemonicParsing="false" onAction="#BookedwaitingBTN" prefHeight="52.0" prefWidth="182.0" style="-fx-background-color: #16B5A2;" text="Booked waiting" textFill="#063630">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="FreeappointmentBTN" layoutY="148.0" mnemonicParsing="false" onAction="#FreeappointmentBTN" prefHeight="52.0" prefWidth="182.0" style="-fx-background-color: #16B5A2; -fx-border-radius: 0;" text="Free appointment" textFill="#063630">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button layoutY="346.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="182.0" style="-fx-background-color: #0E7569;" text="Booked finished" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="LogoutBTN" layoutX="5.0" layoutY="584.0" mnemonicParsing="false" onAction="#LogoutBTN" prefHeight="52.0" prefWidth="172.0" style="-fx-background-color: #063630;" text="Log out" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="51.0" layoutY="36.0" text="Patient" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="182.0" layoutY="83.0" prefHeight="59.0" prefWidth="1118.0" style="-fx-background-color: #063630;" />
+      <Label fx:id="DRcommentLabel" alignment="TOP_LEFT" layoutX="777.0" layoutY="166.0" prefHeight="225.0" prefWidth="498.0" style="-fx-background-color: #0d72661a;" text="Doctor comment">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="ShowcommentBTN" layoutX="780.0" layoutY="430.0" mnemonicParsing="false" onAction="#ShowcommentBTN" prefHeight="52.0" prefWidth="132.0" style="-fx-background-color: #063630;" text="Show comment" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="ShowallfreeappointmentBTN" layoutX="370.0" layoutY="572.0" mnemonicParsing="false" onAction="#Showallfreeappointment" prefHeight="59.0" prefWidth="230.0" style="-fx-background-color: #1DF5DC;" text="Show  appointment" textFill="#063630">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <TableView fx:id="TableView" layoutX="221.0" layoutY="152.0" prefHeight="413.0" prefWidth="529.0">
+         <columns>
+            <TableColumn fx:id="AppointmentDateCV" prefWidth="181.0" text="Appointment Date" />
+            <TableColumn fx:id="AppointmentDayCV" prefWidth="167.0" text="Appointment Day" />
+            <TableColumn fx:id="AppointmentTimeCV" prefWidth="180.0" text="Appointment Time" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

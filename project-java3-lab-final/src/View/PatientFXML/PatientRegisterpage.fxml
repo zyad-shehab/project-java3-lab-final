@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="802.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.PatientFXML.PatientRegisterpageController">
+   <children>
+      <ImageView fitHeight="663.0" fitWidth="838.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/regester.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="110.0" layoutY="77.0" prefHeight="425.0" prefWidth="618.0" style="-fx-background-color: #0E756990;">
+         <children>
+            <TextField fx:id="firstNameTF" layoutX="120.0" layoutY="93.0" prefHeight="31.0" prefWidth="166.0" promptText="enter First name" />
+            <Button fx:id="RegisterBTN" layoutX="254.0" layoutY="361.0" mnemonicParsing="false" onAction="#RegisterBTN" prefHeight="31.0" prefWidth="111.0" style="-fx-background-color: #063630; -fx-border-radius: 20;" text="Register" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Label layoutX="23.0" layoutY="95.0" prefHeight="27.0" prefWidth="97.0" text="First name" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="324.0" layoutY="95.0" prefHeight="27.0" prefWidth="97.0" text="Last name" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="lastNameTF" layoutX="421.0" layoutY="93.0" prefHeight="31.0" prefWidth="166.0" promptText="enter Last name" />
+            <TextField fx:id="userNameTF" layoutX="421.0" layoutY="154.0" prefHeight="31.0" prefWidth="166.0" promptText="enter user name" />
+            <Label layoutX="324.0" layoutY="156.0" prefHeight="27.0" prefWidth="97.0" text="User Name" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="23.0" layoutY="156.0" prefHeight="27.0" prefWidth="97.0" text="Email" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="emailTF" layoutX="120.0" layoutY="154.0" prefHeight="31.0" prefWidth="166.0" promptText="enter Email" />
+            <TextField fx:id="passwordTF" layoutX="121.0" layoutY="218.0" prefHeight="31.0" prefWidth="166.0" promptText="enter Password" />
+            <Label layoutX="25.0" layoutY="220.0" prefHeight="27.0" prefWidth="97.0" text="Password" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="326.0" layoutY="220.0" prefHeight="27.0" prefWidth="97.0" text="Phone" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="phoneTF" layoutX="419.0" layoutY="218.0" prefHeight="31.0" prefWidth="166.0" promptText="enter Phone" />
+            <TextField fx:id="ageTF" layoutX="121.0" layoutY="285.0" prefHeight="31.0" prefWidth="166.0" promptText="enter Age" />
+            <Label layoutX="24.0" layoutY="287.0" prefHeight="27.0" prefWidth="97.0" text="Age" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="324.0" layoutY="293.0" prefHeight="27.0" prefWidth="97.0" text="Gender" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="maleRB" layoutX="423.0" layoutY="294.0" mnemonicParsing="false" onAction="#maleRB" selected="true" text="Male" textFill="WHITE">
+               <toggleGroup>
+                  <ToggleGroup fx:id="genderGroup" />
+               </toggleGroup>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="femaleRB" layoutX="502.0" layoutY="294.0" mnemonicParsing="false" onAction="#femaleRB" prefHeight="25.0" prefWidth="95.0" text="Female" textFill="WHITE" toggleGroup="$genderGroup">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </RadioButton>
+            <Label layoutX="151.0" layoutY="14.0" prefHeight="46.0" prefWidth="317.0" text="Patient Register page" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="31.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="LoginBTN" layoutX="214.0" layoutY="520.0" mnemonicParsing="false" onAction="#LoginBTN" prefHeight="31.0" prefWidth="124.0" style="-fx-background-color: #0E7569;" text="Login" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="AdminBTN" layoutX="499.0" layoutY="520.0" mnemonicParsing="false" onAction="#AdminBTN" prefHeight="31.0" prefWidth="124.0" style="-fx-background-color: #0E7569;" text="Admin" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
